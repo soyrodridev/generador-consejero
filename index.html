@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Advice generator app</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            lightCyan: 'hsl(193, 38%, 86%)',
+            neonGreen: 'hsl(150, 100%, 66%)',
+            neutral: {
+              grayishBlue: 'hsl(217, 19%, 38%)',
+              darkGrayishBlue: 'hsl(217, 19%, 24%)',
+              darkBlue: 'hsl(218, 23%, 16%)',
+            },
+          },
+        },
+      },
+    };
+  </script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="bg-neutral-darkBlue text-lightCyan">
+  
+  <section class="w-full h-full   grid place-content-center px-2"> 
+    <div class="bg-neutral-darkGrayishBlue p-4 max-w-[500px] rounded-2xl flex flex-col items-center min-h-[100px]">
+      <h2 class="text-sm  text-center text-neonGreen font-normal">ADVISE #117</h2>
+      <p class="font-bold  text-center" id="texto"></p>
+      <div class="mt-4 mb-10">
+        <img src="images/pattern-divider-mobile.svg" class="md:hidden" alt="svg" >
+        <img src="images/pattern-divider-desktop.svg" class="hidden md:block" alt="svg" >
+      </div>
+      <button id="generador" class="bg-neonGreen size-14 grid place-content-center rounded-full  -mb-10 overflow-hidden hover:bg-lightCyan hover:shadow-slate-400 hover:shadow-2xl ">
+        <img src="images/icon-dice.svg" class="" alt="svg">
+      </button>
+    </div>
+  </section>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.soyrodri.dev" >soyrodri.dev</a>.
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
